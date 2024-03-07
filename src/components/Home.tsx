@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
 import bg from "../assets/images/bg2.png";
+import {Link} from "react-router-dom" 
 import monkey from "../assets/images/monkey.svg";
 import msg from "../assets/images/msg.svg";
 import "../custom.css";
-function Home() {
+
+function Home(): JSX.Element {
   return (
     <div className="relative h-screen overflow-hidden w-full flex justify-center items-center">
       <img
