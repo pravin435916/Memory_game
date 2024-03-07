@@ -1,15 +1,18 @@
 import crd from "./assets/images/card.png";
-import './custom.css'
-
+interface FruitType {
+    img: string;
+    id: number;
+    matched: boolean;
+  }
 interface FruitProps {
   fruit: { id: number; img: string };
-  handleChoice: (fruit: { id: number; img: string }) => void;
+  handleChoice: (fruit: FruitType) => void;
   flipped: boolean;
 }
 
 export default function Fruit({ fruit, handleChoice, flipped }: FruitProps): JSX.Element {
   const handleClick = () => {
-    handleChoice(fruit);
+    handleChoice(fruit as FruitType); // Explicitly cast fruit to FruitType
   };
 
   return (
