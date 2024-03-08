@@ -108,9 +108,9 @@ function Play(): JSX.Element {
           ))}
         </div>
       </div>
-        <div className='flex justify-center items-center w-full h-full py-10 gap-4 z-20'>
-        <button className="button absolute bottom-8 left-14 text-white py-2 px-2 sm:px-6 rounded-lg" onClick={resetGame}>Reset Game</button>
-        <button className="button absolute bottom-8 right-14 text-white py-2 px-2 sm:px-6 rounded-lg" onClick={checkScore}>check Score</button>
+        <div className='flex justify-center items-center w-full py-10 gap-4 z-20'>
+        <button className="button hidden sm:block sm:absolute bottom-8 left-14 text-white py-2 px-6 rounded-lg" onClick={resetGame}>Reset Game</button>
+        <button className="button hidden sm:block sm:absolute bottom-8 right-14 text-white py-2 px-6 rounded-lg" onClick={checkScore}>check Score</button>
         </div>
     </>
   );
