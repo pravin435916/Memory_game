@@ -15,7 +15,9 @@ interface FruitProps {
 
 export default function Fruit({ fruit, handleChoice, flipped }: FruitProps): JSX.Element {
   const handleClick = () => {
-    handleChoice(fruit as FruitType);
+    if (!flipped) {
+      handleChoice(fruit as FruitType);
+    }
   };
 
   return (
