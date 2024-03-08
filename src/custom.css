@@ -1,19 +1,18 @@
 .card {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  width: 14rem;
-  height: 16rem; 
+  /* width: 14rem;
+  height: 16rem;  */
   perspective: 1000px;
 }
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
   .card{
     width: 8rem;
     height: 10rem;
     
   }
   
-}
+} */
 
 .inner {
   width: 100%;

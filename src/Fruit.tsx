@@ -19,7 +19,7 @@ export default function Fruit({ fruit, handleChoice, flipped }: FruitProps): JSX
   };
 
   return (
-    <div className={`card ${flipped ? "flipped" : ""}`} onClick={handleClick}>
+    <div className={`card w-28 h-40 sm:w-48 sm:h-64 ${flipped ? "flipped" : ""}`} onClick={handleClick}>
       <div className="inner">
         <img className="front" src={fruit.img} alt="Card front" />
         <img className="back" src={crd} alt="Card Back" />

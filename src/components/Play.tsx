@@ -86,18 +86,18 @@ function Play(): JSX.Element {
       <div className='w-full h-screen flex justify-center items-center overflow-hidden'>
       <div className="fixed top-0 left-0 w-full h-screen bg-cover bg-center" style={{backgroundImage: `url(${bg})`}}></div>
 
-      <div className='absolute flex flex-col sm:text-2xl text-xl gap-2 top-4 right-4 text-[#11AEC6] font-bold'>
+      <div className='absolute flex flex-col sm:text-2xl text-xl gap-2 top-4 right-4 text-[#11AEC6] font-bold items-center'>
         <span>Score: {score}/60</span>
         <span>{Math.floor(turn)} - turn</span>
       </div>
-      <div className="absolute top-16 sm:mx-auto w-44 sm:w-[16rem] flex justify-center items-center">
-        <span className="text-[#11AEC6] font-bold uppercase text-xl sm:text-2xl z-10">
+      <div className="absolute top-20 sm:mx-auto w-32 sm:w-[16rem] flex justify-center items-center">
+        <span className="text-[#11AEC6] font-bold uppercase text-xs sm:text-2xl z-10">
           select a card !
         </span>
         <img className="absolute w-[30rem]" src={msg} alt="" />
       </div>
       <Link to="/"><img className='absolute w-16 sm:w-24 top-4 left-4' src={arr} alt="" /></Link>
-        <div className='w-full mx-0 sm:w-[90vw] flex flex-wrap sm:gap-1 mt-64 sm:mt-20 gap-0 justify-center'>
+        <div className='absolute top-10 w-screen sm:w-[90vw] flex flex-wrap sm:gap-2 mt-20 gap-0 justify-center p-0 m-0'>
           {fruits.map((fruit) => (
             <Fruit
             fruit={fruit}
@@ -108,9 +108,9 @@ function Play(): JSX.Element {
           ))}
         </div>
       </div>
-        <div className='flex justify-center items-center w-full py-10 gap-4 z-20'>
-        <button className="button hidden sm:block sm:absolute bottom-8 left-14 text-white py-2 px-6 rounded-lg" onClick={resetGame}>Reset Game</button>
-        <button className="button hidden sm:block sm:absolute bottom-8 right-14 text-white py-2 px-6 rounded-lg" onClick={checkScore}>check Score</button>
+        <div className='flex justify-center items-center w-full h-full py-10 gap-4 z-20'>
+        <button className="button absolute bottom-8 left-14 text-white py-2 px-2 sm:px-6 rounded-lg" onClick={resetGame}>Reset Game</button>
+        <button className="button absolute bottom-8 right-14 text-white py-2 px-2 sm:px-6 rounded-lg" onClick={checkScore}>check Score</button>
         </div>
     </>
   );
