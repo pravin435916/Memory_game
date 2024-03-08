@@ -125,7 +125,7 @@ function Play(): JSX.Element {
       </div>
       {popup && 
       <div className='fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75'>
-         <div className='card_box w-96 sm:w-[40rem] h-max sm:h-96 border rounded-lg font-serif shadow-2xl   bg-yellow-300 flex justify-center items-center font-bold text-white text-3xl sm:flex-row flex-col mx-4 gap-4 py-4'>
+         <div className='card_box w-96 sm:w-[40rem] h-max sm:h-96 border rounded-lg font-serif shadow-2xl   bg-yellow-300 flex justify-center items-center font-bold text-red-500 text-3xl sm:flex-row flex-col mx-4 gap-4 py-4'>
           <div className='flex flex-col justify-center items-center p-4'>
           <span>Congratulations 🎉</span><span> You won</span>
           <span>Score :  {score}</span>
